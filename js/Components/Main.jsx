@@ -1,16 +1,15 @@
-import React from 'react'
+import React from 'react';
+import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import AppBar from 'material-ui/AppBar';
+import DrawerNav from './Libraries/Navbar.jsx'
 
-
-class Main extends React.Component {
-
-
-    render() {
-        return <div>
-            <div className='ui grid' >
-                <img className="ui fluid image" src="./back1.jpeg" />
-            </div>
-        </div>
-    }
-}
+const Main = () => (
+  <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
+    {/*<AppBar title="My AppBar" />*/}
+    <DrawerNav />
+  </MuiThemeProvider>
+);
 
 export default Main
