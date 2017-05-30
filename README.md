@@ -1,2 +1,2 @@
-# Website-project---financial-intermediary
-Project of website of financial intermediary - making with ReactJS, Semantic UI React, RWD.
+# WebApp-project---financial-intermediary
+Project of WebApp financial intermediary - making with ReactJS, Material-UI React, Bootstrap, RWD - in progress.
