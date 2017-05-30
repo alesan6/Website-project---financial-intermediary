@@ -24,7 +24,7 @@ export default class DrawerSimpleExample extends React.Component {
           onTouchTap={this.handleToggle}
         />
         <Drawer open={this.state.open}>
-          <MenuItem>O Mnie</MenuItem>
+          <MenuItem>O Nas</MenuItem>
           <MenuExampleNested />
           <MenuItem>Kontakt</MenuItem>
         </Drawer>

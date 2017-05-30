@@ -19,21 +19,50 @@ const MenuExampleNested = () => (
           rightIcon={<ArrowDropRight />}
           menuItems={[
             <MenuItem
-              primaryText="Show"
+              primaryText="Klient indywidualny"
               rightIcon={<ArrowDropRight />}
               menuItems={[
-                <MenuItem primaryText="Show Level 2" />,
-                <MenuItem primaryText="Grid lines" />,
-                <MenuItem primaryText="Page breaks" />,
-                <MenuItem primaryText="Rules" />,
+                <MenuItem primaryText="Kredyt indywidualny"
+                    rightIcon={<i className="fa fa-user-circle" aria-hidden="true"></i>}
+                />,
+                <MenuItem primaryText="Kredyt hipoteczny"
+                    rightIcon={<i className="fa fa-home" aria-hidden="true"></i>}
+                />,
+                <MenuItem primaryText="Ubezpieczenia kredytu"
+                    rightIcon={<i className="fa fa-diamond" aria-hidden="true"></i>}
+                />,
               ]}
             />,
-            <MenuItem primaryText="Grid lines" />,
-            <MenuItem primaryText="Page breaks" />,
-            <MenuItem primaryText="Rules" />,
+            <MenuItem primaryText="Klient biznesowy"
+                rightIcon={<ArrowDropRight />}
+                menuItems={[
+                  <MenuItem primaryText="Kredyt inwestycyjny"
+                      rightIcon={<i className="fa fa-line-chart" aria-hidden="true"></i>}
+                  />,
+                  <MenuItem primaryText="Ubezpieczenia kredytu"
+                      rightIcon={<i className="fa fa-diamond" aria-hidden="true"></i>}
+                  />,
+                ]}
+            />,
+            <MenuItem primaryText="Oferta dla rolników"
+                rightIcon={<ArrowDropRight />}
+                menuItems={[
+                  <MenuItem primaryText="Kredyt hipoteczny"
+                      rightIcon={<i className="fa fa-home" aria-hidden="true"></i>}
+                   />,
+                  <MenuItem primaryText="Kredyt inwestycyjny"
+                      rightIcon={<i className="fa fa-line-chart" aria-hidden="true"></i>}
+                   />,
+                  <MenuItem primaryText="Kredyt konsolidacyjny"
+                      rightIcon={<i className="fa fa-balance-scale" aria-hidden="true"></i>}
+                   />,
+                  <MenuItem primaryText="Ubezpieczenia kredytu"
+                      rightIcon={<i className="fa fa-diamond" aria-hidden="true"></i>}
+                  />,
+                ]}
+            />,
           ]}
         />
-        <Divider />
       </Menu>
     </Paper>
   </div>
