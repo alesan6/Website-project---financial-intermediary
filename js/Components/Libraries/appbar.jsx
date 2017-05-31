@@ -4,6 +4,8 @@ import AppBar from "material-ui/AppBar";
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import MenuExampleNested from './listMenu.jsx'
+import chatButton from './chatButton.jsx'
+import { Link } from 'react-router'
 
 
 export default class DrawerSimpleExample extends React.Component {
@@ -24,9 +26,10 @@ export default class DrawerSimpleExample extends React.Component {
           onTouchTap={this.handleToggle}
         />
         <Drawer open={this.state.open}>
-          <MenuItem>O Nas</MenuItem>
+          <Link to="/main/about"><MenuItem>O Nas</MenuItem></Link>
           <MenuExampleNested />
-          <MenuItem>Kontakt</MenuItem>
+          <Link to="/main/contact"><MenuItem>Kontakt</MenuItem></Link>
+          <chatButton />
         </Drawer>
       </div>
     );
